@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>com.conorobrien.gonewproject</id>
+    <name>Go New Project</name>
+    <vendor>Conor O'Brien</vendor>
+    <description><![CDATA[
+        <p>Adds <b>Go</b> to the New Project dialog in the free IntelliJ IDEA, no paid Go plugin required.</p>
+        <ul>
+            <li>Module path, Go version and a starter template (console app, library or HTTP service)</li>
+            <li>Writes <code>go.mod</code>, starter code with a test, <code>.gitignore</code> and a README</li>
+            <li>Detects installed Go SDKs from PATH, GOROOT and common install locations</li>
+        </ul>
+        <p>Pair it with a gopls-based plugin for editing support.</p>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <newProjectWizard.languageGenerator
+                implementation="com.conorobrien.gonewproject.GoLanguageGenerator"/>
+    </extensions>
+</idea-plugin>
