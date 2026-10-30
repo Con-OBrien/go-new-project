@@ -43,3 +43,7 @@ To try it in a sandbox IDE instead: `./gradlew runIde`.
 | `GoNewProjectStep.kt` | Dialog fields, validation, file writing, module creation |
 | `GoSdk.kt` | Finds Go installations by their `VERSION` file |
 | `GoScaffold.kt` | Module-path rules and the starter file templates (no IntelliJ dependencies) |
+
+## License
+
+[MIT](LICENSE)
